@@ -14,6 +14,11 @@ const config: ExpoConfig = {
   slug: "caliphate-rides",
   scheme: "caliphaterides",
   version: "0.1.0",
+  extra: {
+    eas: {
+      projectId: "fce0a1ba-e6be-4d40-8778-423244b46d04",
+    },
+  },
   orientation: "portrait",
   icon: "./assets/icon.png",
   userInterfaceStyle: "automatic",
@@ -28,7 +33,7 @@ const config: ExpoConfig = {
   },
   android: {
     package: "ng.caliphaterides.app",
-    adaptiveIcon: { foregroundImage: "./assets/adaptive-icon.png", backgroundColor: GREEN },
+    adaptiveIcon: { foregroundImage: "./assets/logo.png", backgroundColor: GREEN },
     permissions: ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "CAMERA"],
   },
   web: { favicon: "./assets/favicon.png" },
